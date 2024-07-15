@@ -2,13 +2,14 @@ body {
     background-color: #202020;
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
-    color: white;
 }
 
 h1 {
+    color: white;
 }
 
 p {
+    color: white;
 }
 
 #WelcomeToWebsite {
@@ -26,8 +27,8 @@ p {
 }
 
 @keyframes HeyAnimation {
-    from {margin-left: -300px;}
-    to {margin-left: 10%;}
+    0% {margin-left: -300px;}
+    100% {margin-left: 10%;}
 }
 
 #Iam {
@@ -37,11 +38,12 @@ p {
     animation-duration: 1s;
     animation-delay: 0.2s;
     animation-fill-mode: both;
+    color: white;
 }
 
 @keyframes IamAnimation {
-    from {margin-left: -300px;}
-    to {margin-left: calc(40% - 25px);}
+    0% {margin-left: -300px;}
+    100% {margin-left: calc(40% - 25px);}
 }
 
 #Nico {
