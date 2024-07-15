@@ -1,0 +1,30 @@
+body {
+    background-color: #202020;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: white;
+}
+
+#Hey {
+    position: fixed;
+    margin-left: 10%;
+    font-size: 35pt;
+}
+
+#Iam {
+    position: fixed;
+    margin-left: 30%;
+    margin-top: 150px;
+    color: white;
+}
+
+.Nico {
+    color: orange;
+    position: fixed;
+    margin-left: 33%;
+    margin-top: 170px;
+    font-size: 50px;
+}
