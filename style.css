@@ -2,6 +2,7 @@ body {
     background-color: #202020;
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
 }
 
 h1 {
@@ -12,9 +13,36 @@ p {
     color: white;
 }
 
-#WelcomeToWebsite {
-    font-weight: 600;
-    text-align: center;
+#HeaderSection {
+    z-index: -1;
+    position: relative;
+}
+
+#Section1 {
+    background-color: #404040;
+    padding: 20px;
+    padding-bottom: 20%;
+    margin-top: calc(var(--scroll) * -100px);
+    z-index: 1;
+    position: relative;
+}
+
+#Section2 {
+    background-color: #7b5018;
+    padding: 20px;
+    padding-bottom: 20%;
+    margin-top: calc(var(--scroll) * -100px);
+    z-index: 2;
+    position: relative;
+    color: #202020;
+}
+
+#Section3 {
+    background-color: #a7a7a7;
+    padding: 20px;
+    margin-top: calc(var(--scroll) * -100px);
+    z-index: 2;
+    position: relative;
 }
 
 #Hey {
@@ -49,7 +77,21 @@ p {
 #Nico {
     color: rgb(255, 165, 0);
     position: relative; 
-    padding-left: 40%;
+    margin-left: 40%;
     margin-top: -15px;
     font-size: 50px;
+    animation-name: NicoAnimation;
+    animation-duration: 1.5s;
+    animation-delay: 0.2s;
+}
+
+@keyframes NicoAnimation {
+    0% {margin-left: -600px;}
+    100% {margin-left: 40%;}
+}
+
+#WelcomeToWebsite {
+    font-weight: 600;
+    text-align: center;
+    min-height: 50px;
 }
