@@ -14,7 +14,7 @@ p {
 
 #WelcomeToWebsite {
     font-weight: 600;
-    margin-left: calc(40% - 70px);
+    text-align: center;
 }
 
 #Hey {
@@ -47,7 +47,7 @@ p {
 }
 
 #Nico {
-    color: orange;
+    color: rgb(255, 165, 0);
     position: relative; 
     padding-left: 40%;
     margin-top: -15px;
