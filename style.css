@@ -13,9 +13,27 @@ p {
     color: white;
 }
 
+a {
+    color: orange;
+}
+
+button {
+    width: 150px;
+    height: 80px;
+    border-radius: 30px;
+    margin-left: 37.5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.ProgrammingButton {
+    background-color: #202020; 
+    color: white;
+}
+
 #HeaderSection {
     z-index: 0;
-    margin-bottom: 350px;
+    height: calc(min(100px, 100vh - 500px) + 470px);
     position: -webkit-sticky; /* for browser compatibility */
     position: sticky;
     top: 30px; 
@@ -24,34 +42,35 @@ p {
 #Section1 {
     background-color: #404040;
     padding: 5px 20px 20px 20px;
-    padding-bottom: 350px;
+    height: 500px;
     margin-top: 0px;
     z-index: 1;
     position: -webkit-sticky; /* for browser compatibility */
     position: sticky;
-    top: 100px;
+    top: calc(min(100px, 100vh - 500px) + 0px);
+    align-items: center;
 }
 
 #Section2 {
     background-color: #7b5018;
     padding: 10px 20px 20px 20px;
-    padding-bottom: 300px;
+    height: 450px;
     margin-top: 0px;
     z-index: 2;
     position: -webkit-sticky; /* for browser compatibility */
     position: sticky;
-    top: 150px;
+    top: calc(min(150px, 100vh - 500px) + 0px);
 }
 
 #Section3 {
     background-color: #a7a7a7;
     padding: 10px 20px 20px 20px;
-    padding-bottom: 250px;
+    height: 400px;
     margin-top: 0px;
     z-index: 3;
     position: -webkit-sticky; /* for browser compatibility */
     position: sticky;
-    top: 200px;
+    top: calc(min(200px, 100vh - 500px) + 0px);
 }
 
 #FooterSection {
