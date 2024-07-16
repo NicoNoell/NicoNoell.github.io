@@ -4,9 +4,9 @@ var i = 0;
 var txt = 'And welcome to my Website :)';
 var speed = 50;
 
-window.addEventListener('scroll', () => {
-    setSectionPositions(window.scrollY);
-}, false);
+// window.addEventListener('scroll', () => {
+//     setSectionPositions(window.scrollY);
+// }, false);
 
 function onPageLoad() {
     setTimeout(typeWriter, 1800)

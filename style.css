@@ -15,35 +15,54 @@ p {
 
 #HeaderSection {
     z-index: -1;
-    position: relative;
+    margin-bottom: 400px;
+    position: -webkit-sticky; /* for browser compatibility */
+    position: sticky;
+    top: 30px; 
 }
 
 #Section1 {
     background-color: #404040;
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
     padding-bottom: 500px;
-    margin-top: 300px;
+    margin-top: 0px;
     z-index: 1;
-    position: relative;
+    position: -webkit-sticky; /* for browser compatibility */
+    position: sticky;
+    top: 50px;
 }
 
 #Section2 {
     background-color: #7b5018;
-    padding: 20px;
-    padding-bottom: 800px;
+    padding: 10px 20px 20px 20px;
+    padding-bottom: 500px;
     margin-top: 0px;
     z-index: 2;
-    position: relative;
-    color: #202020;
+    position: -webkit-sticky; /* for browser compatibility */
+    position: sticky;
+    top: 100px;
 }
 
 #Section3 {
     background-color: #a7a7a7;
-    padding: 20px;
-    padding-bottom: 800px;
+    padding: 10px 20px 20px 20px;
+    padding-bottom: 300px;
     margin-top: 0px;
-    z-index: 2;
-    position: relative;
+    z-index: 3;
+    position: -webkit-sticky; /* for browser compatibility */
+    position: sticky;
+    top: 150px;
+}
+
+#FooterSection {
+    background-color: #202020;
+    padding: 10px 20px 20px 20px;
+    height: 100%;
+    margin-top: 0px;
+    z-index: 3;
+    position: -webkit-sticky; /* for browser compatibility */
+    position: sticky;
+    top: 0px;
 }
 
 #Hey {
