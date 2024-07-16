@@ -46,7 +46,7 @@ p {
 #Section3 {
     background-color: #a7a7a7;
     padding: 10px 20px 20px 20px;
-    padding-bottom: 300px;
+    padding-bottom: 350px;
     margin-top: 0px;
     z-index: 3;
     position: -webkit-sticky; /* for browser compatibility */
@@ -62,8 +62,8 @@ p {
     padding-bottom: 10px;
     z-index: 5;
     position: -webkit-sticky; /* for browser compatibility */
-    position: relative;
-    top: -100%;
+    position: sticky;
+    top: 0px;
 }
 
 #Hey {
