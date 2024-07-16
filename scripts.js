@@ -30,3 +30,16 @@ function setSectionPositions(scroll) {
     const s3 = document.getElementById("Section3");
     s3.style.transform = 'translateY(' + scroll * -3 + 'px)';
 }
+
+function scrollToTop(){
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+}
+
+function smoothScroll(id){
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
