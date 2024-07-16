@@ -44,6 +44,9 @@ button {
     padding: 5px 20px 20px 20px;
     height: 500px;
     margin-top: 0px;
+    border-radius: 40px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     z-index: 1;
     position: -webkit-sticky; /* for browser compatibility */
     position: sticky;
@@ -55,7 +58,10 @@ button {
     background-color: #7b5018;
     padding: 10px 20px 20px 20px;
     height: 450px;
-    margin-top: 0px;
+    margin-top: -40px;
+    border-radius: 40px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     z-index: 2;
     position: -webkit-sticky; /* for browser compatibility */
     position: sticky;
@@ -66,7 +72,10 @@ button {
     background-color: #a7a7a7;
     padding: 10px 20px 20px 20px;
     height: 400px;
-    margin-top: 0px;
+    margin-top: -40px;
+    border-radius: 40px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     z-index: 3;
     position: -webkit-sticky; /* for browser compatibility */
     position: sticky;
