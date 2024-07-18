@@ -19,6 +19,7 @@ const sectionIDs = ["Section1", "Section2", "Section3"]
 window.addEventListener('resize', setSectionHeights, true);
 
 function onPageLoad() {
+    document.getElementById('TransitionHelper').className = '';
     setTimeout(typeWriter, 1800)
     setSectionHeights();
 }
