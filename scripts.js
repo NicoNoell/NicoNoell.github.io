@@ -4,6 +4,12 @@ var i = 0;
 var txt = 'And welcome to my Website :)';
 var speed = 50;
 
+var sectionDifference = 50;
+
+var lastHeight = 0;
+var lastWidth = 0;
+var updateBuffer = 50;
+
 const sectionIDs = ["Section1", "Section2", "Section3"]  
 
 // window.addEventListener('scroll', () => {
@@ -28,6 +34,14 @@ function typeWriter() {
   }
 
 function setSectionHeights() {
+
+    if (Math.abs(lastHeight - window.innerHeight) < updateBuffer && Math.abs(lastWidth - window.innerWidth) < updateBuffer){
+        return;
+    }
+
+    lastHeight = window.innerHeight;
+    lastWidth = window.innerWidth;
+
     // Reset heights
     for (var i=0; i < sectionIDs.length; i++) {
         document.getElementById(sectionIDs[i]).setAttribute("style", "height: auto; top:"+top+"px; margin-bottom: -200px; margin-top: 200px");
