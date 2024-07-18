@@ -21,13 +21,13 @@ body {
 
 @keyframes ThisAnimation {
     0% {margin-left: -300px;}
-    100% {margin-left: calc(50% - 65px);}
+    100% {margin-left: calc(max(50%, 220px) - 65px);}
 }
 
 #Is {
     position: absolute;
     text-align: left;
-    margin-left: calc(50% - 10px);
+    margin-left: calc(max(50%, 220px) - 10px);
     animation-name: IsAnimation;
     animation-duration: 1s;
     animation-delay: -0.1s;
@@ -53,7 +53,7 @@ body {
 
 @keyframes MyAnimation {
     0% {margin-left: calc(100% - 40px);}
-    100% {margin-left: calc(50% + 25px);}
+    100% {margin-left: calc(max(50%, 220px) + 25px);}
 }
 
 #Portfolio {
@@ -67,7 +67,7 @@ body {
     animation-fill-mode: both;
     color: white;
     background-color: #202020;
-    margin-left: max(50%, 300px);
+    margin-left: max(50%, 220px);
     transform: translate(-50%);
     overflow-wrap: break-word;
 }
@@ -76,5 +76,5 @@ body {
     0% {margin-top: 100%;}
     30% {margin-top: 70px; color: white}
     70% {margin-top: 70px; color: white}
-    100% {margin-top: 30px; color: orange}
+    100% {margin-top: 20px; color: orange}
 }
