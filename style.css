@@ -65,10 +65,10 @@ button {
     font-size: 20pt;
     width: auto;
     height:min-content;
-    text-align: right;
     overflow-wrap: anywhere;
     text-decoration-line: underline;
     text-decoration-style: dotted;
+    text-align: right;
 }
 
 .HeadButton:hover {

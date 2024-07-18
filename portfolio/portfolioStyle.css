@@ -67,8 +67,9 @@ body {
     animation-fill-mode: both;
     color: white;
     background-color: #202020;
-    left: 50%;
+    margin-left: max(50%, 300px);
     transform: translate(-50%);
+    overflow-wrap: break-word;
 }
 
 @keyframes PortfolioAnimation {
