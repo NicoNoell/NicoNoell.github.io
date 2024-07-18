@@ -1,5 +1,4 @@
 body {
-    background-color: #202020;
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
@@ -40,7 +39,6 @@ a {
     100% {height: 0; top: 100%;}
 }
 
-
 button {
     width: 150px;
     height: 80px;
@@ -69,119 +67,13 @@ button {
     overflow-wrap: anywhere;
 }
 
-#HeadButton1 {
-    color: #A0A0A0;
-    text-shadow: 2px 2px 5px #202020;
-}
-#HeadButton2 {
-    color: #D0D0D0;
-    text-shadow: 2px 2px 5px #202020;
-}
-#HeadButton3 {
-    color: #202020;
-    text-shadow: 2px 2px 5px #7b5018;
-}
-
-.ProgrammingButton {
-    background-color: #202020; 
-    color: white;
-}
-
-.MiddleSection {
-    padding: 10px 20px 40px 20px;
-    border-radius: 20px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    position: -webkit-sticky; /* for browser compatibility */
-    position: sticky;
-    /* transition: all 0.5s; */
-}
-
-#HeaderSection {
-    z-index: 0;
-    position: -webkit-sticky; /* for browser compatibility */
-    position: sticky;
-    top: 30px; 
-    padding-bottom: 0px;
-}
-
-#Section1 {
-    background-color: #404040;
-    z-index: 1;
-}
-
-#Section2 {
-    background-color: #7b5018;
-    z-index: 2;
-}
-
-#Section3 {
-    background-color: #a7a7a7;
-    z-index: 3;
-}
-
-#FooterSection {
-    background-color: #202020;
-    padding: 10px 20px 20px 20px;
-    margin-top: 50px;
-    padding-bottom: 10px;
-    z-index: 100;
-    position: -webkit-sticky; /* for browser compatibility */
-    position: sticky;
-    
-}
-
-#Hey {
-    position: relative;
-    margin-left: 10%;
-    margin-right: 200%;
-    font-size: 30pt;
-    animation-name: HeyAnimation;
-    animation-duration: 0.5s;
-    width: 300px;
-}
-
-@keyframes HeyAnimation {
-    0% {margin-left: -300px;}
-    100% {margin-left: 10%;}
-}
-
-#Iam {
-    position: relative;
-    text-align: left;
-    margin-top: 80px;
-    animation-name: IamAnimation;
-    animation-duration: 1s;
-    animation-delay: 0.2s;
-    animation-fill-mode: both;
-    color: white;
-}
-
-@keyframes IamAnimation {
-    0% {margin-left: -300px;}
-    100% {margin-left: calc(50% - 96px);}
-}
-
-#Nico {
-    color: rgb(255, 165, 0);
-    overflow: hidden;
-    position: relative;
-    text-align: left;
-    animation-fill-mode: both;
-    margin-top: -15px;
-    font-size: 50px;
-    animation-name: NicoAnimation;
-    animation-duration: 1.5s;
-    animation-delay: 0.2s;
-}
-
-@keyframes NicoAnimation {
-    0% {margin-left: -600px;}
-    100% {margin-left: calc(50% - 70px);}
-}
-
-#WelcomeToWebsite {
-    font-weight: 600;
+.FlexLogoBar {
+    justify-content: center;
     text-align: center;
-    min-height: 50px;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    margin: 20px;
 }

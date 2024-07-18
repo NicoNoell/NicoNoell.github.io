@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nico's Website</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./indexStyle.css">
     <script src="scripts.js"></script>
     <link rel="icon" href="./icon.ico" type="image/x-icon">
   </head>
@@ -23,7 +24,7 @@
         <div id="Section1" class="MiddleSection" onclick="smoothScroll('Section1Scrollpoint');">
             <div class="FlexHeading">
                 <h1>About Me</h1>                
-                <button id="HeadButton1" class="HeadButton" onclick="openPage('#404040', '/portfolio.html')">↪ My Portfolio</button>              
+                <button id="HeadButton1" class="HeadButton" onclick="openPage('#404040', '/portfolio/portfolio.html')">↪ My Portfolio</button>              
             </div>
             <p>Hi! My name is Nico and I am a student at the Technical University of Munich (<a href="https://www.tum.de/en/">TUM</a>) in the departments of Math and Computer Science.
                 I am passionate about many things, particularly programming, writing, sports and learning things about the World. <br>
@@ -33,20 +34,19 @@
         <div id="Section2Scrollpoint"></div>
         <div id="Section2" class="MiddleSection" onclick="smoothScroll('Section2Scrollpoint');">
             <div class="FlexHeading">
-                <h1>Projects</h1>                
-                <button id="HeadButton2" class="HeadButton" onclick="openPage('#7b5018', '/projects.html')">↪ My Projects</button>              
+                <h1>Programming</h1>                
+                <button id="HeadButton2" class="HeadButton" onclick="openPage('#7b5018', '/projects/projects.html')">↪ My Projects</button>              
             </div>
             <p>I've been in love with programming since I first got into touch with it in 5th grade. Since then I've aquired a wide range of skills and 
                 also made a few litte Projects. My main programming languages are python, C# and C++.
                 <br><br>
             </p>
-            <!-- <button class="ProgrammingButton" onclick="openPage('#7b5018', '/projects.html');">↪ More about that</button> -->
         </div>
         <div id="Section3Scrollpoint"></div>
         <div id="Section3" class="MiddleSection" onclick="smoothScroll('Section3Scrollpoint');">
             <div class="FlexHeading">
                 <h1 style="color: #202020">Blog</h1>                
-                <button id="HeadButton3" class="HeadButton" onclick="openPage('#a7a7a7', '/blog.html')">↪ My Blog</button>              
+                <button id="HeadButton3" class="HeadButton" onclick="openPage('#a7a7a7', '/blog/blog.html')">↪ My Blog</button>              
             </div>
             <p style="color: #202020; font-weight: 600;">
                 As already mentioned, I also like to write and think about different stuff, of which most is probably more philosophical.
@@ -55,7 +55,12 @@
         </div>
         <div id="FooterSection">
             <h1>Contact</h1>
-            <p>Here is just the usual privacy policy stuff</p>
+            <p>If you like what I do and have something to tell me, please don't hesitate to contact me over one of these channels:</p>
+            <div class="FlexLogoBar">
+                <a href="https://www.github.com/NicoNoell"><img src = "./logos/github-mark-white.svg" alt="Github" class="logo"/></a>
+                <a href="mailto:nico@ensite.de"><img src = "./logos/email.png" alt="Email" class="logo"/></a>
+            </div>
+            <p style="font-size: 8pt;">You can look at the code to this website at your own risk <a href="https://github.com/NicoNoell/NicoNoell.github.io">here</a> :]</p>
         </div>
     </main>
   </body>
