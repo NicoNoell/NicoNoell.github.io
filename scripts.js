@@ -4,31 +4,54 @@ var i = 0;
 var txt = 'And welcome to my Website :)';
 var speed = 50;
 
+const sectionIDs = ["Section1", "Section2", "Section3"]  
+
 // window.addEventListener('scroll', () => {
 //     setSectionPositions(window.scrollY);
 // }, false);
 
+window.addEventListener('resize', setSectionHeights, true);
+
 function onPageLoad() {
     setTimeout(typeWriter, 1800)
+    setSectionHeights();
 }
 
 function typeWriter() {
     if (i < txt.length) {
       document.getElementById("WelcomeToWebsite").innerHTML += txt.charAt(i);
-      const s1 = document.getElementById("Section1");
+      // const s1 = document.getElementById("Section1");
       //s1.style.transform = 'translateY(' + i * 5 + 'px)';
       i++;
       setTimeout(typeWriter, speed);
     }
   }
 
-function setSectionPositions(scroll) {
-    const s1 = document.getElementById("Section1");
-    s1.style.transform = 'translateY(' + scroll * -1 + 'px)';
-    const s2 = document.getElementById("Section2");
-    s2.style.transform = 'translateY(' + scroll * -2 + 'px)';
-    const s3 = document.getElementById("Section3");
-    s3.style.transform = 'translateY(' + scroll * -3 + 'px)';
+function setSectionHeights() {
+    // Reset heights
+    for (var i=0; i < sectionIDs.length; i++) {
+        document.getElementById(sectionIDs[i]).setAttribute("style", "height: auto; top:"+top+"px; margin-bottom: -200px; margin-top: 200px");
+    }
+
+    // Get heights of all Sections
+    var heights = [];
+    var biggest = 0;
+    for (var i=0; i < sectionIDs.length; i++) {
+        var height = document.getElementById(sectionIDs[i]).clientHeight + i*50;
+        heights.push(height);
+        if (height > biggest){
+            biggest = height;
+        }
+    }
+
+    // Set Css-Attributes accordingly
+    for (var i=0; i < sectionIDs.length; i++) {
+        var height = biggest - 50 * i;
+        var top = Math.min(100 + i * 50, window.innerHeight - biggest + 50 * i);
+        document.getElementById(sectionIDs[i]).setAttribute("style", "height:" + height + "px; top:"+top+"px; margin-bottom: -70px; margin-top: 50px");
+        // document.getElementById(sectionIDs[i]).setAttribute("style", "margin-bottom:" + 50 + "px");
+    }
+    document.getElementById("FooterSection").setAttribute("style", "margin-top: 50px");
 }
 
 function scrollToTop(){

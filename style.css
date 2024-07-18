@@ -21,9 +21,11 @@ button {
     width: 150px;
     height: 80px;
     border-radius: 30px;
-    margin-left: 37.5%;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ProgrammingButton {
@@ -31,9 +33,17 @@ button {
     color: white;
 }
 
+.MiddleSection {
+    padding: 10px 20px 40px 20px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: -webkit-sticky; /* for browser compatibility */
+    position: sticky;
+}
+
 #HeaderSection {
     z-index: 0;
-    height: calc(min(100px, 100vh - 500px) + 470px);
     position: -webkit-sticky; /* for browser compatibility */
     position: sticky;
     top: 30px; 
@@ -41,57 +51,27 @@ button {
 
 #Section1 {
     background-color: #404040;
-    padding: 5px 20px 20px 20px;
-    height: 500px;
-    margin-top: 0px;
-    border-radius: 20px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
     z-index: 1;
-    position: -webkit-sticky; /* for browser compatibility */
-    position: sticky;
-    top: calc(min(100px, 100vh - 500px) + 0px);
-    align-items: center;
 }
 
 #Section2 {
     background-color: #7b5018;
-    padding: 10px 20px 20px 20px;
-    height: 450px;
-    margin-top: -20px;
-    border-radius: 20px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
     z-index: 2;
-    position: -webkit-sticky; /* for browser compatibility */
-    position: sticky;
-    top: calc(min(150px, 100vh - 500px) + 0px);
 }
 
 #Section3 {
     background-color: #a7a7a7;
-    padding: 10px 20px 20px 20px;
-    height: 400px;
-    margin-top: -20px;
-    border-radius: 20px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
     z-index: 3;
-    position: -webkit-sticky; /* for browser compatibility */
-    position: sticky;
-    top: calc(min(200px, 100vh - 500px) + 0px);
 }
 
 #FooterSection {
     background-color: #202020;
     padding: 10px 20px 20px 20px;
-    /* height: 100%; */
-    margin-top: 0px;
+    margin-top: -100vh;
     padding-bottom: 10px;
-    z-index: 5;
+    z-index: 100;
     position: -webkit-sticky; /* for browser compatibility */
     position: sticky;
-    top: 0px;
 }
 
 #Hey {
@@ -110,6 +90,7 @@ button {
 
 #Iam {
     position: relative;
+    text-align: left;
     margin-top: 80px;
     animation-name: IamAnimation;
     animation-duration: 1s;
@@ -126,7 +107,8 @@ button {
 #Nico {
     color: rgb(255, 165, 0);
     overflow: hidden;
-    position: relative; 
+    position: relative;
+    text-align: left;
     margin-left: 40%;
     margin-top: -15px;
     font-size: 50px;
