@@ -8,7 +8,7 @@ var sectionDifference = 50;
 
 var lastHeight = 0;
 var lastWidth = 0;
-var updateBuffer = 50;
+var updateBuffer = 0;
 
 const sectionIDs = ["Section1", "Section2", "Section3"]  
 
@@ -65,7 +65,7 @@ function setSectionHeights() {
         document.getElementById(sectionIDs[i]).setAttribute("style", "height:" + height + "px; top:"+top+"px; margin-bottom: -70px; margin-top: 50px");
         // document.getElementById(sectionIDs[i]).setAttribute("style", "margin-bottom:" + 50 + "px");
     }
-    document.getElementById("FooterSection").setAttribute("style", "margin-top: 50px");
+    document.getElementById("FooterSection").setAttribute("style", "margin-top: 100px");
 }
 
 function scrollToTop(){
