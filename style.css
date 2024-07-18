@@ -67,7 +67,8 @@ button {
     height:min-content;
     text-align: right;
     overflow-wrap: anywhere;
-    text-decoration:dotted underline;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
 }
 
 .HeadButton:hover {
