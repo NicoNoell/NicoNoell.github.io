@@ -90,7 +90,7 @@ button {
     position: -webkit-sticky; /* for browser compatibility */
     position: sticky;
     top: 30px; 
-    margin-bottom: 250px;
+    padding-bottom: 0px;
 }
 
 #Section1 {

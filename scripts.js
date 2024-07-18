@@ -62,8 +62,11 @@ function setSectionHeights() {
     for (var i=0; i < sectionIDs.length; i++) {
         var height = biggest - 50 * i;
         var top = Math.min(100 + i * 50, window.innerHeight - biggest + 50 * i);
-        document.getElementById(sectionIDs[i]).setAttribute("style", "height:" + height + "px; top:"+top+"px; margin-bottom: -70px; margin-top: 50px");
-        // document.getElementById(sectionIDs[i]).setAttribute("style", "margin-bottom:" + 50 + "px");
+        var marginTop = 50;
+        if (i == 0){
+            marginTop = 300;
+        }
+        document.getElementById(sectionIDs[i]).setAttribute("style", "height:" + height + "px; top:"+top+"px; margin-bottom: -70px; margin-top: "+marginTop+"px");
     }
     document.getElementById("FooterSection").setAttribute("style", "margin-top: 50px;");
 }
