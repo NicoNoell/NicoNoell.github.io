@@ -65,7 +65,7 @@ function setSectionHeights() {
         document.getElementById(sectionIDs[i]).setAttribute("style", "height:" + height + "px; top:"+top+"px; margin-bottom: -70px; margin-top: 50px");
         // document.getElementById(sectionIDs[i]).setAttribute("style", "margin-bottom:" + 50 + "px");
     }
-    document.getElementById("FooterSection").setAttribute("style", "margin-top: 100px");
+    document.getElementById("FooterSection").setAttribute("style", "margin-top: 50px;");
 }
 
 function scrollToTop(){
@@ -79,4 +79,10 @@ function smoothScroll(id){
     document.getElementById(id).scrollIntoView({
         behavior: 'smooth'
     });
+}
+
+function openPage(color, pagename){
+    document.getElementById('TransitionHelper').style.backgroundColor = color;
+    document.getElementById('TransitionHelper').className = 'AnimateTransition';
+    setTimeout(openPage => {window.open(pagename, "_self");}, 500);
 }
