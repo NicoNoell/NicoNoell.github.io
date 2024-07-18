@@ -53,18 +53,25 @@ button {
 .FlexHeading {
     display: flex; 
     justify-content: space-between; 
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .HeadButton {
     background-color: transparent;
     border-color: transparent;
-    margin-right: 0;
+    margin: 0;
+    padding: 0;
     font-size: 20pt;
     width: auto;
-    height: auto;
+    height:min-content;
     text-align: right;
     overflow-wrap: anywhere;
+    text-decoration:dotted underline;
+}
+
+.HeadButton:hover {
+    cursor: pointer;
 }
 
 .FlexLogoBar {
@@ -75,5 +82,56 @@ button {
 .logo {
     width: 35px;
     height: 35px;
-    margin: 20px;
+    margin: 15px;
+}
+
+
+#Click {
+    position: absolute;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 10pt;
+    animation-name: ClickAnimation;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    color: white;
+}
+
+@keyframes ClickAnimation {
+    0% {margin-left: -300px;}
+    100% {margin-left: 20px;}
+}
+
+#Here {
+    position: absolute;
+    text-align: left;
+    margin-top: 30px;
+    animation-name: HereAnimation;
+    animation-duration: 1s;
+    animation-delay: 1.3s;
+    animation-fill-mode: both;
+    color: white;
+}
+
+@keyframes HereAnimation {
+    0% {margin-left: -300px;}
+    100% {margin-left: 20px;}
+}
+
+#ToGoBack {    
+    position: absolute;
+    text-align: left;
+    margin-top: 60px;
+    font-size: 10pt;
+    animation-name: HereAnimation;
+    animation-duration: 1s;
+    animation-delay: 1.6s;
+    animation-fill-mode: both;
+    color: white;
+}
+
+@keyframes HereAnimation {
+    0% {margin-left: -300px;}
+    100% {margin-left: 20px;}
 }

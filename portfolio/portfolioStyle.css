@@ -1,0 +1,79 @@
+body {
+    background-color: #404040;
+    text-align: center;
+}
+
+#HeaderSection {
+    height: 150px;
+    text-align: center;   
+}
+
+#This {
+    position: absolute;
+    text-align: left;
+    margin-top: 40px;
+    animation-name: ThisAnimation;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    color: white;
+}
+
+@keyframes ThisAnimation {
+    0% {margin-left: -300px;}
+    100% {margin-left: calc(50% - 65px);}
+}
+
+#Is {
+    position: absolute;
+    text-align: left;
+    margin-left: calc(50% - 10px);
+    animation-name: IsAnimation;
+    animation-duration: 1s;
+    animation-delay: -0.1s;
+    animation-fill-mode: both;
+    color: white;
+}
+
+@keyframes IsAnimation {
+    0% {margin-top: -300px;}
+    100% {margin-top: 40px;}
+}
+
+#My {
+    position: absolute;
+    text-align: left;
+    margin-top: 40px;
+    animation-name: MyAnimation;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    color: white;
+}
+
+@keyframes MyAnimation {
+    0% {margin-left: calc(100% - 40px);}
+    100% {margin-left: calc(50% + 25px);}
+}
+
+#Portfolio {
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: fixed;
+    text-align: center;
+    animation-name: PortfolioAnimation;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    color: white;
+    background-color: #202020;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@keyframes PortfolioAnimation {
+    0% {margin-top: 100%;}
+    30% {margin-top: 70px; color: white}
+    70% {margin-top: 70px; color: white}
+    100% {margin-top: 30px; color: orange}
+}
