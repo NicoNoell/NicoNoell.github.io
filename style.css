@@ -164,6 +164,7 @@ button {
     justify-content: center;
     text-align: center;
     font-size: 8pt;
+    z-index: 100;
 }
 
 .FooterElement {
