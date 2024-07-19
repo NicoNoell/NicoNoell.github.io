@@ -13,29 +13,13 @@ h1 {
 }
 
 .Section {
-    background-color: #7b5018;
+    background-color: #a77535;
     min-height: 200px;
     border-radius: 20px;
     text-align: left;
     color: white;
     padding: 5px 20px;
     margin-bottom: 40px;
-}
-
-#Ooh {
-    position: absolute;
-    text-align: center;
-    margin-top: 0px;
-    animation-name: OohAnimation;
-    animation-duration: 1.5s;
-    animation-delay: 5s;
-    animation-fill-mode: both;
-    color: white;
-}
-
-@keyframes OohAnimation {
-    0% {margin-left: 100%; rotate: 360deg;}
-    100% {margin-left: calc(50%); rotate: 0deg; transform: translate(-50%);}
 }
 
 #LookAt {
@@ -47,14 +31,14 @@ h1 {
     animation-delay: 0s;
     animation-fill-mode: both;
     color: white;
-    margin-left: calc(50% - 75px);
+    margin-left: calc(max(50%, 240px) - 75px);
 }
 
 @keyframes LookAtAnimation {
     0% {margin-top: -50px; color: white}
-    25% {margin-top: 30px; color: white}
-    80% {margin-top: 30px; color: white}
-    100% {margin-top: 30px; color: transparent}
+    25% {margin-top: 15px; color: white}
+    80% {margin-top: 15px; color: white}
+    100% {margin-top: 15px; color: transparent}
 }
 
 #My {
@@ -66,28 +50,28 @@ h1 {
     animation-delay: 0s;
     animation-fill-mode: both;
     color: white;
-    margin-left: calc(50% + 16px);
+    margin-left: calc(max(50%, 240px) + 16px);
 }
 
 @keyframes MyAnimation {
-    0% {margin-top: -50px; margin-left: calc(50% + 16px);}
-    12.5% {margin-top: 30px; margin-left: calc(50% + 16px);}
-    45% {margin-top: 30px; margin-left: calc(50% + 16px);}
-    60% {margin-top: 30px; margin-left: calc(50% - 94px);}
-    100% {margin-top: 30px; margin-left: calc(50% - 94px);}
+    0% {margin-top: -50px; margin-left: calc(max(50%, 240px) + 16px);}
+    12.5% {margin-top: 15px; margin-left: calc(max(50%, 240px) + 16px);}
+    45% {margin-top: 15px; margin-left: calc(max(50%, 240px) + 16px);}
+    60% {margin-top: 15px; margin-left: calc(max(50%, 240px) - 94px);}
+    100% {margin-top: 15px; margin-left: calc(max(50%, 240px) - 94px);}
 }
 
 #Shiny {
     position: absolute;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     animation-name: ShinyAnimation;
     animation-duration: 4s;
     animation-delay: 0.5s;
     animation-fill-mode: both;
     color: white;
     rotate: -90deg;
-    margin-left: calc(50% - 160px);
+    margin-left: calc(max(50%, 240px) - 160px);
     font-size: 22pt;
 }
 
@@ -102,7 +86,7 @@ h1 {
 #Projects {
     position: absolute;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     animation-name: ProjectsAnimation;
     animation-duration: 5s;
     animation-delay: 1s;
@@ -119,6 +103,6 @@ h1 {
 
 @keyframes ProjectsAnimation {
     0% {margin-left: 100%; color: #7b5018; border-color: transparent; text-decoration-color: transparent;}
-    25% {margin-left: 50%; color: white; transform: translate(-50%); border-color: transparent; text-decoration-color: transparent;}
-    100% {margin-left: 50%; color: white; transform: translate(-50%); background-color: transparent; border-color: transparent; text-decoration-color: white;}
+    25% {margin-left: calc(max(50%, 240px)); color: white; transform: translate(-50%); border-color: transparent; text-decoration-color: transparent;}
+    100% {margin-left: calc(max(50%, 240px)); color: white; transform: translate(-50%); background-color: transparent; border-color: transparent; text-decoration-color: white;}
 }
