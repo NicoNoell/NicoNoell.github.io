@@ -2,6 +2,10 @@ body {
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -118,8 +122,8 @@ button {
 }
 
 @keyframes HereAnimation {
-    0% {font-size: 12pt}
-    100% {font-size: 24pt}
+    0% {font-size: 12pt; margin-top: 30px;}
+    100% {font-size: 24pt; margin-top: 30px;}
 }
 
 #ToGoBack {    
@@ -137,4 +141,10 @@ button {
 @keyframes ToGoBackAnimation {
     0% {margin-left: -300px;}
     100% {margin-left: 20px;}
+}
+
+.Footer {
+    background-color: #202020;
+    min-height: 20px;
+    margin-top: auto;
 }
