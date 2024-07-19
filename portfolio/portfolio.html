@@ -10,9 +10,9 @@
     <script src="../scripts.js"></script>
     <link rel="icon" href="../icon.ico" type="image/x-icon">
   </head>
-  <body onload="onPageLoad();">
+  <body onload="closeTransition();">
     <header></header>
-    <div id="TransitionHelper"></div>
+    <div id="TransitionHelper" style="background-color: #404040"></div>
     <main>
         <div id="HeaderSection">
             <h3 id="This">This</h3>
@@ -33,7 +33,7 @@
                     <summary><b>Python (experienced)</b></summary>
                     <p>Python was my first real programming language (after Scratch). It was the basis for my understanding of object-oriented programming and 
                     has remained my favorite programming language since I first got into touch with it. Below or under <a href="./../projects/projects.html">Projects</a> you will find many little programms and games made with Python. <br>
-                    I have around 6 years of experience with Python (though I don't think that a reliable measurement for coding-skill).
+                    I have around <script>document.write(new Date().getFullYear() - 2018)</script> years of experience with Python (though I don't think that a reliable measurement for coding-skill).
                     </p>
                 </details>
                 <br>
@@ -42,7 +42,7 @@
                     <p>Like almost every young developer I was mostly interested in making games and thus got into touch with C# and Unity. It was a considerable step up from the simple (more or less) typeless python
                         I was used to and it took some time for me to be able to produce something without a tutorial. After a year or so I, for the time, quit Unity and worked more closely with Windows Forms in .NET (dot-Net). <br>
                         Then, around 2 years later I again came into contact with C# at an internship. I learned concepts like Unit-testing (which I still often find superfluous) and navigating large code bases. <br>
-                        Overall, I have around 4 years of experience with C#.
+                        Overall, I have around <script>document.write(new Date().getFullYear() - 2020)</script> years of experience with C#.
                     </p>
                 </details>
                 <br>
@@ -54,7 +54,7 @@
                 </details>
                 <br>
                 <details>
-                    <summary><b>Html, Css and Javascript (I did those to myself for this Website)</b></summary>
+                    <summary><b>Html, Css and Javascript (I did those to myself to build this Website)</b></summary>
                     <p>As the summary-heading might give away, I'm not really a big fan of any of the three. I don't <i>hate</i> them, but they are often just not nice to work with (you dont want to know how often i needed to look up how to correctly center elements or text while building this website).
                         If necessary however, I am able to create whatever is needed with them, but I'm already sure that I don't want to be a Web-Developer. 
                     </p>
@@ -70,7 +70,9 @@
         </div>
     </main>
     <footer class="Footer">
-
+        <a href="./../privacy.html"><p class="FooterElement">Privacy</p></a>
+        <p class="FooterElement">|</p>
+        <p class="FooterElement">&copy <script>document.write(new Date().getFullYear())</script> Nico</p>
     </footer>
   </body>
 </html>

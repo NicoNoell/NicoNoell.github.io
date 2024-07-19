@@ -20,7 +20,7 @@ window.addEventListener('resize', setSectionHeights, true);
 
 function onPageLoad() {
     document.getElementById('TransitionHelper').className = '';
-    setTimeout(typeWriter, 1800)
+    setTimeout(typeWriter, 1800);
     setSectionHeights();
 }
 

@@ -13,6 +13,10 @@ function smoothScroll(id){
 
 function openPage(color, pagename){
     document.getElementById('TransitionHelper').style.backgroundColor = color;
-    document.getElementById('TransitionHelper').className = 'AnimateTransition';
+    document.getElementById('TransitionHelper').className = 'AnimateTransition1';
     setTimeout(openPage => {window.open(pagename, "_self");}, 300);
+}
+
+function closeTransition(){
+    document.getElementById('TransitionHelper').className = 'AnimateTransition2';
 }
