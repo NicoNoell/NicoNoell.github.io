@@ -171,3 +171,9 @@ button {
     margin: 0px 5px;
     /* background-color: aqua; */
 }
+
+.FooterLink {
+    color: white;
+    text-decoration-style: dotted;
+    text-decoration-color: orange;
+}
