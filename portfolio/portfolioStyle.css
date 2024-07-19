@@ -8,6 +8,19 @@ body {
     text-align: center;   
 }
 
+h1 {
+    color:white;
+}
+
+.Section {
+    background-color: #303030;
+    min-height: 200px;
+    border-radius: 20px;
+    text-align: left;
+    color: white;
+    padding: 5px 20px;
+}
+
 #This {
     position: absolute;
     text-align: left;
@@ -59,22 +72,23 @@ body {
 #Portfolio {
     padding: 10px 20px;
     border-radius: 20px;
-    position: fixed;
+    position: absolute;
     text-align: center;
     animation-name: PortfolioAnimation;
     animation-duration: 4s;
-    animation-delay: 0s;
+    animation-delay: 0.2s;
     animation-fill-mode: both;
     color: white;
     background-color: #202020;
     margin-left: max(50%, 220px);
+    margin-right: -500;
     transform: translate(-50%);
     overflow-wrap: break-word;
 }
 
 @keyframes PortfolioAnimation {
-    0% {margin-top: 100%;}
-    30% {margin-top: 70px; color: white}
+    0% {margin-top: 70px; margin-left: calc(100% + 500px);}
+    30% {margin-top: 70px; margin-left: max(50%, 220px); color: white}
     70% {margin-top: 70px; color: white}
     100% {margin-top: 20px; color: orange}
 }

@@ -14,5 +14,5 @@ function smoothScroll(id){
 function openPage(color, pagename){
     document.getElementById('TransitionHelper').style.backgroundColor = color;
     document.getElementById('TransitionHelper').className = 'AnimateTransition';
-    setTimeout(openPage => {window.open(pagename, "_self");}, 500);
+    setTimeout(openPage => {window.open(pagename, "_self");}, 300);
 }

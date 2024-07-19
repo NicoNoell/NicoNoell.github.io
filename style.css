@@ -28,7 +28,7 @@ a {
 
 .AnimateTransition {
     animation-name: TransitionAnimation;
-    animation-duration: 1s;
+    animation-duration: 0.6s;
     /* animation-fill-mode: both; */
 }
 
@@ -106,8 +106,10 @@ button {
 
 #Here {
     position: absolute;
-    text-align: left;
+    text-align: center;
+    width: 77px;
     margin-top: 30px;
+    margin-left: 20px;
     animation-name: HereAnimation;
     animation-duration: 1s;
     animation-delay: 1.3s;
@@ -116,8 +118,8 @@ button {
 }
 
 @keyframes HereAnimation {
-    0% {margin-left: -300px;}
-    100% {margin-left: 20px;}
+    0% {font-size: 12pt}
+    100% {font-size: 24pt}
 }
 
 #ToGoBack {    
@@ -125,14 +127,14 @@ button {
     text-align: left;
     margin-top: 60px;
     font-size: 10pt;
-    animation-name: HereAnimation;
+    animation-name: ToGoBackAnimation;
     animation-duration: 1s;
     animation-delay: 1.6s;
     animation-fill-mode: both;
     color: white;
 }
 
-@keyframes HereAnimation {
+@keyframes ToGoBackAnimation {
     0% {margin-left: -300px;}
     100% {margin-left: 20px;}
 }
