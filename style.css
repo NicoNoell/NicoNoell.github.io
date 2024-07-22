@@ -178,3 +178,31 @@ button {
     text-decoration-style: dotted;
     text-decoration-color: orange;
 }
+
+.GreyLink {
+    color: #303030; 
+    font-weight: 600; 
+    text-decoration-style: dotted; 
+    text-decoration-line: underline;
+}
+
+.OrangeLink {
+    color: orange; 
+    font-weight: 400; 
+    text-decoration-style: dotted; 
+    text-decoration-line: underline;
+}
+
+.WhiteLink {
+    color: white; 
+    font-weight: 400; 
+    text-decoration-style: dotted; 
+    text-decoration-line: underline;
+}
+
+.LightGreyLink {
+    color: #BBBBBB; 
+    font-weight: 600; 
+    text-decoration-style: dotted; 
+    text-decoration-line: underline;
+}

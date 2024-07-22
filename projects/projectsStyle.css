@@ -13,13 +13,40 @@ h1 {
 }
 
 .Section {
-    background-color: #a77535;
+    background-color: #94682f;
     min-height: 200px;
     border-radius: 20px;
     text-align: left;
     color: white;
-    padding: 5px 20px;
+    padding: 5px 20px 0px 20px;
     margin-bottom: 40px;
+    box-shadow: 2px 2px 5px #202020;
+}
+
+.HeadButton {
+    color: #BBBBBB;
+    text-shadow: 2px 2px 5px #202020;
+}
+
+.ContinueReadingButton {
+    background-color: #b28243;
+    border-color: transparent;
+    margin: 0px -20px 0px -20px;
+    width: calc(100% + 40px);
+    height: fit-content;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.ContinueContent {
+    display: none;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
 #LookAt {

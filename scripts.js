@@ -17,6 +17,10 @@ function openPage(color, pagename){
     setTimeout(openPage => {window.open(pagename, "_self");}, 300);
 }
 
+function openPageWithoutAnimation(pagename){
+    window.open(pagename, "_self");
+}
+
 function closeTransition(){
     document.getElementById('TransitionHelper').className = 'AnimateTransition2';
 }
