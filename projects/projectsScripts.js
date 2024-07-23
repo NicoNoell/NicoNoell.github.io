@@ -32,13 +32,13 @@ function onContinueReadingButtonClick() {
     if (content.style.maxHeight) {
         content.style.maxHeight = null;
         this.style.marginTop = "-40px";
-        this.innerText = "⮮ Continue reading ⮯";
+        this.innerText = "▼ Continue reading ▼";
         this.classList.remove("active");
         this.classList.add("inactive");
     } else {
         content.style.maxHeight = content.scrollHeight + "px";
         this.style.marginTop = "20px";
-        this.innerText = "⮬ Minimize content ⮭";
+        this.innerText = "▲ Minimize content ▲";
         this.classList.active = true;
         this.classList.remove("inactive");
         this.classList.add("active");

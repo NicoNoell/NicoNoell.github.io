@@ -34,7 +34,6 @@
 }
 
 #Arrow {
-    margin-top: -3px;
     position: absolute;
     animation-name: ArrowAnimation;
     animation-duration: 0.8s;
@@ -68,7 +67,7 @@
     width: calc(100% - 160px);
     margin-left: 110px;
     margin-top: 20px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     background-color: #404040;
     padding: 10px;
     padding-left: calc(50vw - 200px - 50%);
