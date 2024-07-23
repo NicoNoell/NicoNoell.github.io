@@ -6,19 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nico's Website</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./blogStyle.css">
     <script src="../scripts.js"></script>
     <link rel="icon" href="../icon.ico" type="image/x-icon">
   </head>
-  <body onload="closeTransition();" style="background-color: #a7a7a7;">
+  <body onload="closeTransition();">
     <header></header>
     <div id="TransitionHelper" style="background-color: #a7a7a7"></div>
     <main>
-        <h1 style="color: #202020;">Blog</h1>
-        <a href="#" onclick="openPage('#202020', './../index.html#Section3');">
-            <h3 id="Click">And click</h3>
-            <h1 id="Here">Here ↫</h1>
-            <h3 id="ToGoBack">to go back</h3>
-        </a>
+        <div id="HeaderSection">
+            <h1 id="How">How</h1>
+            <h1 id="About">about</h1>
+            <h1 id="Reading">reading</h1>
+            <h1 id="My">my</h1>
+            <h1 id="Blog">Blog</h1>
+            <h1 id="Questionmark">?</h1>
+            <a href="#" onclick="openPage('#202020', './../index.html#Section3');">
+                <h3 id="Click">And click</h3>
+                <h1 id="Here">Here ↫</h1>
+                <h3 id="ToGoBack">to go back</h3>
+            </a>
+        </div>
+        <div class="Section">
+            <h1>Hi</h1>
+        </div>
     </main>
     <footer class="Footer">
         <p class="FooterElement"><a class="FooterLink" onclick="openPage('#202020', '../legal/termsOfService.html');">Terms of Service</a></p>

@@ -1,0 +1,115 @@
+body {
+    background-color: #a7a7a7;
+}
+
+#HeaderSection {
+    height: 150px;
+    text-align: center; 
+}
+
+#How {
+    position: absolute;
+    margin-top: 26px;
+    margin-left: calc(50% - 103px);
+    font-size: 15pt;
+    animation-name: HowAnimation;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+@keyframes HowAnimation {
+    0% {margin-top: -50px; color: white}
+    12% {margin-top: 26px; color: white}
+    80% {margin-top: 26px; color: white}
+    100% {margin-top: 26px; color: transparent}
+}
+
+#About {
+    position: absolute;
+    margin-top: 26px;
+    margin-left: calc(50% - 60px);
+    font-size: 15pt;
+    animation-name: AboutAnimation;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+@keyframes AboutAnimation {
+    0% {margin-top: -50px; color: white}
+    4% {margin-top: -50px; color: white}
+    16% {margin-top: 26px; color: white}
+    80% {margin-top: 26px; color: white}
+    100% {margin-top: 26px; color: transparent}
+}
+
+#Reading {
+    position: absolute;
+    margin-top: 46px;
+    margin-left: calc(50% - 110px);
+    font-size: 15pt;
+    animation-name: ReadingAnimation;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+@keyframes ReadingAnimation {
+    0% {margin-top: 70px; color: #a7a7a7}
+    14% {margin-top: 70px; color: #a7a7a7}
+    26% {margin-top: 46px; color: white}
+    80% {margin-top: 46px; color: white}
+    100% {margin-top: 46px; color: transparent}
+}
+
+#My {
+    position: absolute;
+    margin-top: 46px;
+    margin-left: calc(50% - 18px);
+    font-size: 15pt;
+    animation-name: MyAnimation;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+@keyframes MyAnimation {
+    0% {margin-top: 70px; color: #a7a7a7}
+    18% {margin-top: 70px; color: #a7a7a7}
+    30% {margin-top: 46px; color: white}
+    80% {margin-top: 46px; color: white}
+    100% {margin-top: 46px; color: transparent}
+}
+
+#Blog {
+    position: absolute;
+    margin-left: calc(50% + 12px);
+    background-color: #808080;
+    padding: 10px 20px;
+    border-radius: 40px;
+    animation-name: BlogAnimation;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+@keyframes BlogAnimation {
+    0% {margin-top: 70px; color: #a7a7a7}
+    18% {margin-top: 70px; color: #a7a7a7}
+    30% {margin-top: 46px; color: white}
+    80% {margin-top: 46px; color: white}
+    100% {margin-top: 46px; }
+}
+
+#Questionmark {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: calc(50% + 130px);
+    font-size: 35pt;
+}
+
+.Section {
+    background-color: #808080;
+    text-align: center;
+}

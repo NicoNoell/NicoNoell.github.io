@@ -127,6 +127,7 @@ button {
     animation-delay: 1s;
     animation-fill-mode: both;
     color: white;
+    text-shadow: 2px 2px 5px #202020;
 }
 
 @keyframes ClickAnimation {
@@ -145,6 +146,7 @@ button {
     animation-delay: 1.3s;
     animation-fill-mode: both;
     color: white;
+    text-shadow: 2px 2px 5px #202020;
 }
 
 @keyframes HereAnimation {
@@ -162,6 +164,7 @@ button {
     animation-delay: 1.6s;
     animation-fill-mode: both;
     color: white;
+    text-shadow: 2px 2px 5px #202020;
 }
 
 @keyframes ToGoBackAnimation {
