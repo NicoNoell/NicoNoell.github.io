@@ -24,24 +24,22 @@ h1 {
 }
 
 .PreviewContent {
-    margin-bottom: 0px;
-    margin-top: 20px;
+    margin: 20px -10px 0px -10px;
     background-color: #9b5b02;
-    padding: 20px;
+    padding: 15px;
     border-radius: 20px;
 }
 
 .ContinueContent {
     overflow: hidden;
     position: relative;
-    margin-bottom: 0px;
+    margin: 20px -10px 0px -10px;
     max-height: 0;
     transition-property: max-height;
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
-    margin-top: 20px;
     background-color: #9b5b02;
-    padding: 20px;
+    padding: 15px;
     border-radius: 20px;
 }
 
