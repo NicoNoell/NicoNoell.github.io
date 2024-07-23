@@ -12,7 +12,7 @@ body {
 }
 #HeadButton3 {
     color: #202020;
-    text-shadow: 2px 2px 5px #7b5018;
+    text-shadow: 1px 1px 5px #9e5a00;
 }
 
 .ProgrammingButton {
@@ -46,7 +46,7 @@ body {
 }
 
 #Section2 {
-    background-color: #7b5018;
+    background-color: #9a5d0e;
     z-index: 2;
     margin-top: 100vh;
 }
@@ -99,7 +99,7 @@ body {
 }
 
 #Nico {
-    color: rgb(255, 165, 0);
+    color: #c47916;
     overflow: hidden;
     position: relative;
     text-align: left;

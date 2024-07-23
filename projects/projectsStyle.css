@@ -1,5 +1,5 @@
 body {
-    background-color: #9e5a00;/* #7b5018; */
+    background-color: #9a5d0e;/* #7b5018; */
     text-align: center;
 }
 
@@ -13,14 +13,9 @@ h1 {
 }
 
 .Section {
-    background-color: #bd7413;/* #94682f; */
-    min-height: 200px;
-    border-radius: 20px;
-    text-align: left;
-    color: white;
+    background-color: #ad6b16;/* #94682f; */
     padding: 5px 20px 0px 20px;
     margin-bottom: 40px;
-    box-shadow: 2px 2px 5px #202020;
 }
 
 .HeadButton {
@@ -30,21 +25,30 @@ h1 {
 
 .PreviewContent {
     margin-bottom: 0px;
+    background-color: #9b5b02;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .ContinueContent {
     overflow: hidden;
-    margin-bottom: 20px;
+    position: relative;
+    margin-bottom: 0px;
     max-height: 0;
     transition-property: max-height;
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
+    margin-top: 20px;
+    background-color: #9b5b02;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .ContinueReadingButton {
-    background-color: #d28f37; /* #b28243; */
+    background-color: #c7832b; /* #b28243; */
+    position: relative;
     border-color: transparent;
-    margin: 0px -20px 0px -20px;
+    margin: -40px -20px 0px -20px;
     width: calc(100% + 40px);
     height: fit-content;
     padding: 10px;
@@ -59,7 +63,11 @@ h1 {
 }
 
 .active, .ContinueReadingButton:hover {
-    background-color: #202020;/* #6e5c44; */
+    background-color: #9a5d0e;/* #6e5c44; */
+}
+
+.inactive {
+    background-color: #c7832b;
 }
 
 #LookAt {
@@ -116,7 +124,7 @@ h1 {
 }
 
 @keyframes ShinyAnimation {
-    0% {margin-top: 10px; color: #7b5018}
+    0% {margin-top: 10px; color: #9a5d0e}
     15% {margin-top: 60px; color: white}
     30% {margin-top: 50px; color: white; text-shadow: 2px 2px 5px #000000; rotate: -450deg;}
     80% {margin-top: 50px; color: white; text-shadow: 4px 4px 5px #000000; rotate: -450deg;}

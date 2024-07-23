@@ -1,3 +1,5 @@
+window.addEventListener('resize', setupCollapsibleContent, true);
+
 function onPageLoad(){
     setupCollapsibleContent();
 }
@@ -6,18 +8,32 @@ function setupCollapsibleContent(){
     var coll = document.getElementsByClassName("ContinueReadingButton");
 
     for (var i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          var content = this.previousElementSibling;
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            this.innerText = "⮮ Continue reading ⮯";
-            this.classList.remove("active");
-          } else {
+        coll[i].removeEventListener("click", onContinueReadingButtonClick);
+        var content = coll[i].previousElementSibling;
+        if (content.style.maxHeight){
             content.style.maxHeight = content.scrollHeight + "px";
-            this.innerText = "⮬ Minimize content ⮭";
-            this.classList.active = true;
-            this.classList.add("active");
-          }
-        });
-      }
+        }
+    }
+
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", onContinueReadingButtonClick);
+    }
+}
+
+function onContinueReadingButtonClick() {
+    var content = this.previousElementSibling;
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        this.style.marginTop = "-40px";
+        this.innerText = "⮮ Continue reading ⮯";
+        this.classList.remove("active");
+        this.classList.add("inactive");
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        this.style.marginTop = "20px";
+        this.innerText = "⮬ Minimize content ⮭";
+        this.classList.active = true;
+        this.classList.remove("inactive");
+        this.classList.add("active");
+    }
 }
