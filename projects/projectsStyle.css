@@ -28,6 +28,19 @@ h1 {
     text-shadow: 2px 2px 5px #202020;
 }
 
+.PreviewContent {
+    margin-bottom: 0px;
+}
+
+.ContinueContent {
+    overflow: hidden;
+    margin-bottom: 20px;
+    max-height: 0;
+    transition-property: max-height;
+    transition-duration: 0.2s;
+    transition-timing-function:  ease-out;
+}
+
 .ContinueReadingButton {
     background-color: #b28243;
     border-color: transparent;
@@ -43,11 +56,9 @@ h1 {
     border-top-right-radius: 0;
 }
 
-.ContinueContent {
-    display: none;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
+.active, .ContinueReadingButton:hover {
+    background-color: #6e5c44;
+  }
 
 #LookAt {
     position: absolute;

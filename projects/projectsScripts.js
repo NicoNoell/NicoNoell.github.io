@@ -9,11 +9,11 @@ function setupCollapsibleContent(){
         coll[i].addEventListener("click", function() {
           this.classList.toggle("active");
           var content = this.previousElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
             this.innerText = "⮮ Continue reading ⮯";
           } else {
-            content.style.display = "block";
+            content.style.maxHeight = content.scrollHeight + "px";
             this.innerText = "⮬ Minimize content ⮭";
           }
         });
