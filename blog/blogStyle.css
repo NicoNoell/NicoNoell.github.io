@@ -2,18 +2,34 @@ body {
     background-color: #a7a7a7;
 }
 
+p {
+    color: #202020;
+    font-weight: 600;
+}
+
+h1 {
+    color: #202020;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px #9a5d0e;
+}
+
 #HeaderSection {
     height: 150px;
     text-align: center; 
 }
 
+.Section {
+    background-color: #808080;
+    text-align: left;
+}
+
 #How {
     position: absolute;
     margin-top: 26px;
-    margin-left: calc(50% - 103px);
+    margin-left: calc(max(50%, 250px) - 103px);
     font-size: 15pt;
     animation-name: HowAnimation;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-delay: 0s;
     animation-fill-mode: both;
 }
@@ -21,17 +37,17 @@ body {
 @keyframes HowAnimation {
     0% {margin-top: -50px; color: white}
     12% {margin-top: 26px; color: white}
-    80% {margin-top: 26px; color: white}
-    100% {margin-top: 26px; color: transparent}
+    80% {margin-top: 26px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
+    100% {margin-top: 26px; color: transparent; text-shadow: 0px 0px transparent;}
 }
 
 #About {
     position: absolute;
     margin-top: 26px;
-    margin-left: calc(50% - 60px);
+    margin-left: calc(max(50%, 250px) - 60px);
     font-size: 15pt;
     animation-name: AboutAnimation;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-delay: 0s;
     animation-fill-mode: both;
 }
@@ -40,76 +56,69 @@ body {
     0% {margin-top: -50px; color: white}
     4% {margin-top: -50px; color: white}
     16% {margin-top: 26px; color: white}
-    80% {margin-top: 26px; color: white}
-    100% {margin-top: 26px; color: transparent}
+    80% {margin-top: 26px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
+    100% {margin-top: 26px; color: transparent; text-shadow: 0px 0px transparent;}
 }
 
 #Reading {
     position: absolute;
     margin-top: 46px;
-    margin-left: calc(50% - 110px);
+    margin-left: calc(max(50%, 250px) - 110px);
     font-size: 15pt;
     animation-name: ReadingAnimation;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-delay: 0s;
     animation-fill-mode: both;
 }
 
 @keyframes ReadingAnimation {
-    0% {margin-top: 70px; color: #a7a7a7}
-    14% {margin-top: 70px; color: #a7a7a7}
-    26% {margin-top: 46px; color: white}
-    80% {margin-top: 46px; color: white}
-    100% {margin-top: 46px; color: transparent}
+    0% {margin-top: 70px; color: #a7a7a7; text-shadow: 0px 0px transparent;}
+    14% {margin-top: 70px; color: #a7a7a7; text-shadow: 0px 0px transparent;}
+    26% {margin-top: 46px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
+    80% {margin-top: 46px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
+    100% {margin-top: 46px; color: transparent; text-shadow: 0px 0px transparent;}
 }
 
 #My {
     position: absolute;
     margin-top: 46px;
-    margin-left: calc(50% - 18px);
+    margin-left: calc(max(50%, 250px) - 18px);
     font-size: 15pt;
     animation-name: MyAnimation;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-delay: 0s;
     animation-fill-mode: both;
 }
 
 @keyframes MyAnimation {
-    0% {margin-top: 70px; color: #a7a7a7}
-    18% {margin-top: 70px; color: #a7a7a7}
-    30% {margin-top: 46px; color: white}
-    80% {margin-top: 46px; color: white}
-    100% {margin-top: 46px; color: transparent}
+    0% {margin-top: 70px; color: #a7a7a7; text-shadow: 0px 0px transparent;}
+    18% {margin-top: 70px; color: #a7a7a7; text-shadow: 0px 0px transparent;}
+    30% {margin-top: 46px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
+    80% {margin-top: 46px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
+    100% {margin-top: 46px; color: transparent; text-shadow: 0px 0px transparent;}
 }
 
 #Blog {
     position: absolute;
-    margin-left: calc(50% + 12px);
+    margin-top: 20px;
     background-color: #808080;
     padding: 10px 20px;
     border-radius: 40px;
     animation-name: BlogAnimation;
-    animation-duration: 8s;
-    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    overflow-wrap: break-word; 
     animation-fill-mode: both;
+    text-align: center;
+    color: #202020;
+    text-shadow: 1px 1px 3px #9a5d0e;
 }
 
 @keyframes BlogAnimation {
-    0% {margin-top: 70px; color: #a7a7a7}
-    18% {margin-top: 70px; color: #a7a7a7}
-    30% {margin-top: 46px; color: white}
-    80% {margin-top: 46px; color: white}
-    100% {margin-top: 46px; }
-}
-
-#Questionmark {
-    position: absolute;
-    margin-top: 23px;
-    margin-left: calc(50% + 130px);
-    font-size: 35pt;
-}
-
-.Section {
-    background-color: #808080;
-    text-align: center;
+    0% {margin-left: 100%; width: 77px;}
+    20% {margin-left: calc(max(50%, 250px) + 12px); width: 77px;}
+    40% {margin-left: calc(max(50%, 250px) + 12px); width: 77px;}
+    60% {margin-left: calc(max(50%, 250px) + -130px); width: 220px;}
+    70% {margin-left: calc(max(50%, 250px) + -130px); width: 220px; box-shadow: 0px 0px #202020;}
+    100% {margin-left: calc(max(50%, 180px) + -58px); width: 77px; box-shadow: 2px 2px 5px #202020;}
 }

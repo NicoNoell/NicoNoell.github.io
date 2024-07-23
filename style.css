@@ -188,7 +188,8 @@ button {
     padding: 10px 5px;
     margin: 0px 5px;
     cursor: default;
-
+    color: white;
+    font-weight: 100;
     /* background-color: aqua; */
 }
 
