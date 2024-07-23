@@ -1,12 +1,19 @@
 window.addEventListener('resize', setupCollapsibleContent, true);
 
+var coll = document.getElementsByClassName("ContinueReadingButton");
+
 function onPageLoad(){
+    setAllCollapsablesToInactive();
     setupCollapsibleContent();
 }
 
-function setupCollapsibleContent(){
-    var coll = document.getElementsByClassName("ContinueReadingButton");
+function setAllCollapsablesToInactive() {
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].classList.add("inactive");
+    }
+}
 
+function setupCollapsibleContent(){
     for (var i = 0; i < coll.length; i++) {
         coll[i].removeEventListener("click", onContinueReadingButtonClick);
         var content = coll[i].previousElementSibling;
