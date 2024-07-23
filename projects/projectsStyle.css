@@ -1,5 +1,5 @@
 body {
-    background-color: #7b5018;
+    background-color: #9e5a00;/* #7b5018; */
     text-align: center;
 }
 
@@ -13,7 +13,7 @@ h1 {
 }
 
 .Section {
-    background-color: #94682f;
+    background-color: #bd7413;/* #94682f; */
     min-height: 200px;
     border-radius: 20px;
     text-align: left;
@@ -38,11 +38,11 @@ h1 {
     max-height: 0;
     transition-property: max-height;
     transition-duration: 0.2s;
-    transition-timing-function:  ease-out;
+    transition-timing-function: ease-out;
 }
 
 .ContinueReadingButton {
-    background-color: #b28243;
+    background-color: #d28f37; /* #b28243; */
     border-color: transparent;
     margin: 0px -20px 0px -20px;
     width: calc(100% + 40px);
@@ -54,11 +54,13 @@ h1 {
     border-radius: 20px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    transition-property: background-color;
+    transition-duration: 0.3s;
 }
 
 .active, .ContinueReadingButton:hover {
-    background-color: #6e5c44;
-  }
+    background-color: #202020;/* #6e5c44; */
+}
 
 #LookAt {
     position: absolute;
