@@ -2,7 +2,7 @@
 
 body {
     text-align: left;
-    font-family: 'Courier New', Courier, monospace, 'Noto Sans Symbols';
+    font-family: 'Noto Sans Symbols';
     margin: 0;
     overflow-x: hidden;
     min-height: 100vh;
@@ -21,6 +21,10 @@ p {
 
 a {
     color: orange;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 #TransitionHelper {
@@ -182,13 +186,20 @@ button {
 .FooterElement {
     padding: 10px 5px;
     margin: 0px 5px;
+    cursor: default;
+
     /* background-color: aqua; */
 }
 
 .FooterLink {
     color: white;
+    text-decoration-line: underline;
     text-decoration-style: dotted;
     text-decoration-color: orange;
+}
+
+.FooterLink:hover {
+    cursor: pointer;
 }
 
 .GreyLink {
