@@ -14,7 +14,44 @@
     <header></header>
     <div id="TransitionHelper" style="background-color: #202020"></div>
     <main>
-        <h1>Terms of Service</h1>
+        <div class="HeaderSection">
+            <a class="BackLink" onclick="openPage('#202020', 'javascript:history.back()')">
+                <h1 id="Arrow">←</h1>
+                <h1 id="GoBack">Go<br>Back</h1>
+            </a>
+            <h1 class="Heading">Terms of Service</h1>
+        </div>
+        <p class="LastChanged">Last changed on the 23.07.2024:</p>
+        <div class="Section">
+            <h2>Welcome to Nico's (my) Website!</h2>
+            <p>I'm excited to have you here. By using this website, you agree to the following terms and conditions:</p>
+            <h3>Use of the Site</h3>
+            <p class="Indented">Feel free to explore, interact with, and enjoy all the content on my site. You can share, comment, and engage as much as you like.</p>
+            <h3>No Spamming</h3>
+            <p class="Indented">Spamming the contact forms, (possible future) comment sections, or any other part of this site is strictly prohibited. I want to maintain a pleasant experience for everyone, and excessive or irrelevant messages disrupt that experience.</p>
+            <h3>Content Ownership</h3>
+            <p class="Indented">Unless otherwise stated, all content on this site is owned by me or used with permission. You can share this content, but please give appropriate credit.</p>
+            <h4 class="Indented">Icon Credits</h4>
+            <p class="Indented">The icons used in the contact-section of this website are from the following sources:</p>
+            <ul class="Indented">
+                <li><a href="https://github.com/logos" class="OrangeLink">Githhub.com⭧</a> for the Github-Icon</li>
+                <li><a href="https://icons8.com/" class="OrangeLink">icons8.com⭧</a> for the remaining icons</li>
+            </ul>
+            <h3>Privacy</h3>
+            <p class="Indented">I respect your privacy. Please refer to the <a onclick="openPage('#202020', './privacy.html');" class="OrangeLink">Privacy Policy</a> to understand how this website handles your data (or lack thereof, as it doesn't collect any personal information).</p>
+            <h3>Changes to Terms</h3>
+            <p class="Indented">I may update these terms from time to time. Any changes will be posted here, and the date at the top will reflect the last time they got updated.</p>
+            <h3>Contact Me</h3>
+            <p class="Indented">If you have any questions or concerns about these terms, feel free to <a class="OrangeLink" onclick="openPage('#202020', '../index.html#Section3');">contact me</a> about your issue. I'm happy about all well-meant feedback I get :).</p>
+            <br>
+        </div>
     </main>
+    <footer class="Footer">
+        <p class="FooterElement"><a class="FooterLink" onclick="openPage('#202020', '../index.html');">Home</a></p>
+        <p class="FooterElement">|</p>
+        <p class="FooterElement"><a class="FooterLink" onclick="openPage('#202020', './privacy.html');">Privacy</a></p>
+        <p class="FooterElement">|</p>
+        <p class="FooterElement">&copy <script>document.write(new Date().getFullYear())</script> Nico</p>
+    </footer>
   </body>
 </html>

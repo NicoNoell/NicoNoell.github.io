@@ -14,7 +14,39 @@
     <header></header>
     <div id="TransitionHelper" style="background-color: #202020"></div>
     <main>
-        <h1>Privacy-Policy</h1>
+        <div class="HeaderSection">
+            <a class="BackLink" onclick="openPage('#202020', 'javascript:history.back()')">
+                <h1 id="Arrow">←</h1>
+                <h1 id="GoBack">Go<br>Back</h1>
+            </a>
+            <h1 class="Heading">Privacy-Policy</h1>
+        </div>
+        <p class="LastChanged">Last changed on the 23.07.2024:</p>
+        <div class="Section">
+            <h2>Welcome to Nico's (my) Website!</h2>
+            <p>Your privacy is important to me. This privacy policy explains my approach to user data.</p>
+            <h3>Information this Site Collects</h3>
+            <p class="Indented">This website does not collect any personal information from its users. When you use this website, I do not track, store, or share any of your personal data.</p>
+            <h3>Third-Party Services</h3>
+            <p class="Indented">This website may contain links to or embed content from third-party websites, such as YouTube. These third-party services may collect data about you, use cookies, or monitor your interaction with the embedded content.
+                <br>
+                For more information about how YouTube or other third-party services process your data, please refer to the corresponding Privacy Policy.
+            </p>
+            <h3>Cookies</h3>
+            <p class="Indented">This website does not use cookies or any other tracking technologies on its own. However, third-party services may use cookies. You can control cookie preferences through your browser settings.</p>
+            <h3>Changes to This Policy</h3>
+            <p class="Indented">I may update this privacy policy from time to time. Any changes will be posted here, and the date at the top will reflect the last time they got updated.</p>
+            <h3>Contact Me</h3>
+            <p class="Indented">If you have any questions or concerns about this privacy policy, feel free to <a class="OrangeLink" onclick="openPage('#202020', '../index.html#Section3');">contact me</a> about your issue. I'm happy about all well-meant feedback I get :).</p>
+            <br>
+        </div>
     </main>
+    <footer class="Footer">
+        <p class="FooterElement"><a class="FooterLink" onclick="openPage('#202020', '../index.html');">Home</a></p>
+        <p class="FooterElement">|</p>
+        <p class="FooterElement"><a class="FooterLink" onclick="openPage('#202020', './termsOfService.html');">Terms of Service</a></p>
+        <p class="FooterElement">|</p>
+        <p class="FooterElement">&copy <script>document.write(new Date().getFullYear())</script> Nico</p>
+    </footer>
   </body>
 </html>
