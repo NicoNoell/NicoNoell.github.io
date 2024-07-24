@@ -34,7 +34,8 @@
 }
 
 #Arrow {
-    position: absolute;
+    position: static;
+    font-size: 15pt;
     margin-top: 0px;
     animation-name: ArrowAnimation;
     animation-duration: 0.8s;
