@@ -10,7 +10,7 @@
     <script src="../scripts.js"></script>
     <link rel="icon" href="../icon.ico" type="image/x-icon">
   </head>
-  <body onload="closeTransition();">
+  <body onload="onPageLoad();closeTransition();">
     <header></header>
     <div id="TransitionHelper" style="background-color: #a7a7a7"></div>
     <main>
@@ -28,7 +28,13 @@
         </div>
         <div class="Section">
             <h1>Hi</h1>
-            <p>Here are going to be my Web-logs about all kinds of topics.</p>
+            <div class="PreviewContent">
+                <p>Here are going to be my Web-logs about all kinds of topics.</p>
+            </div>
+            <div class="ContinueContent">
+                <p>Hi :D</p>
+            </div>
+            <button class="ContinueReadingButton"></button>
         </div>
     </main>
     <footer class="Footer">

@@ -43,8 +43,8 @@
 }
 
 @keyframes ArrowAnimation {
-    0% {font-size: 15pt; margin-top: 5px;}
-    100% {font-size: 25pt; margin-top: -3px;}
+    0% {font-size: 15pt;}
+    100% {font-size: 25pt;}
 }
 
 #GoBack {

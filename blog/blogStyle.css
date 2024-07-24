@@ -18,9 +18,28 @@ h1 {
     text-align: center; 
 }
 
+.PreviewContent {
+    background-color: #A0A0A0;
+    color: #202020;
+}
+
+.ContinueContent {
+    background-color: #A0A0A0;
+    color: #202020;
+}
+
+.ContinueReadingButton {
+    background-color: #686868;
+}
+
+.active, .ContinueReadingButton:hover {
+    background-color: #505050;
+}
+
 .Section {
     background-color: #808080;
     text-align: left;
+    margin-bottom: 40px;
 }
 
 #How {

@@ -24,41 +24,18 @@ h1 {
 }
 
 .PreviewContent {
-    margin: 20px -10px 0px -10px;
     background-color: #9b5b02;
-    padding: 15px;
-    border-radius: 20px;
+    color: white;
 }
 
 .ContinueContent {
-    overflow: hidden;
-    position: relative;
-    margin: 20px -10px 10px -10px;
-    max-height: 0;
-    transition-property: max-height;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-out;
     background-color: #9b5b02;
-    padding: 15px;
-    border-radius: 20px;
+    color: white;
 }
 
 .ContinueReadingButton {
     background-color: #c7832b; /* #b28243; */
-    position: relative;
-    border-color: transparent;
-    margin: -40px -20px 0px -20px;
-    width: calc(100% + 40px);
-    height: fit-content;
-    padding: 10px;
     color: white;
-    font-weight: 600;
-    font-size: 15px;
-    border-radius: 20px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    transition-property: all;
-    transition-duration: 0.3s;
 }
 
 .active, .ContinueReadingButton:hover {

@@ -12,13 +12,9 @@ var updateBuffer = 0;
 
 const sectionIDs = ["Section1", "Section2", "Section3"]  
 
-// window.addEventListener('scroll', () => {
-//     setSectionPositions(window.scrollY);
-// }, false);
-
 window.addEventListener('resize', setSectionHeights, true);
 
-function onPageLoad() {
+function onIndexPageLoad() {
     document.getElementById('TransitionHelper').className = '';
     setTimeout(typeWriter, 1800);
     setSectionHeights();
@@ -27,8 +23,6 @@ function onPageLoad() {
 function typeWriter() {
     if (i < txt.length) {
       document.getElementById("WelcomeToWebsite").innerHTML += txt.charAt(i);
-      // const s1 = document.getElementById("Section1");
-      //s1.style.transform = 'translateY(' + i * 5 + 'px)';
       i++;
       setTimeout(typeWriter, speed);
     }
