@@ -8,8 +8,19 @@ body {
     text-align: center; 
 }
 
-h1 {
+.FlexHeading {
+    margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
     color:white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .Section {
@@ -30,6 +41,7 @@ h1 {
 
 .ContinueContent {
     background-color: #9b5b02;
+    padding-top: 15px;
     color: white;
 }
 
@@ -44,6 +56,24 @@ h1 {
 
 .inactive {
     background-color: #c7832b;
+}
+
+img {
+    background-color: #c7832b;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    width: calc(min(300px, 100% - 40px))
+}
+
+pre {
+    background-color: #c7832b;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+code {
+    border-radius: 10px;
 }
 
 #LookAt {

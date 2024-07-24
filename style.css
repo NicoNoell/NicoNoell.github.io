@@ -48,7 +48,6 @@ a:hover {
 }
 
 .Section {
-    min-height: 200px;
     border-radius: 20px;
     text-align: left;
     color: white;
@@ -245,7 +244,7 @@ button {
     margin: 20px -10px 10px -10px;
     max-height: 0;
     transition-property: all;
-    transition-duration: 0.2s;
+    transition-duration: 1s;
     transition-timing-function: ease-out;
     background-color: #202020;
     padding: 15px;

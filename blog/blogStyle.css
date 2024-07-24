@@ -2,6 +2,15 @@ body {
     background-color: #a7a7a7;
 }
 
+.FlexHeading {
+    margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color:white;
+    margin: 0px;
+}
+
 p {
     color: #202020;
     font-weight: 600;
@@ -32,7 +41,7 @@ h1 {
     background-color: #686868;
 }
 
-.active, .ContinueReadingButton:hover {
+.active, .ContinueReadingButton:hover, .ContinueReadingButton:active {
     background-color: #505050;
 }
 
