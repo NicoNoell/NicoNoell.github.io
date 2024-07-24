@@ -63,13 +63,13 @@ img {
     padding: 10px;
     border-radius: 10px;
     margin: 10px 0px;
-    width: calc(min(300px, 100% - 40px))
+    width: calc(min(300px, 100% - 20px))
 }
 
 pre {
-    background-color: #c7832b;
+    /* background-color: #c7832b;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 20px;*/
 }
 
 code {
