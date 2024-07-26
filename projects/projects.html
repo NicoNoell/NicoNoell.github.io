@@ -14,7 +14,6 @@
     <script>hljs.initHighlightingOnLoad();</script>
 
     <script src="../scripts.js"></script>
-    <!-- <script src="./projectsScripts.js"></script> -->
     <link rel="icon" href="../icon.ico" type="image/x-icon">
   </head>
   <body onload="onPageLoad();closeTransition();">
@@ -45,7 +44,7 @@
                 If you don't know the A*-Pathfinding Algorithm (pronounced "A-Star"), it's an Algorithm to <b>find the shortest path between two points</b>. 
                 It has a multitude of applications, the most notible being of course car navigation systems or navigation from A to B in any network (with possibly weighted edges) and it works similar to <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" class="GreyLink">Dijekstra's Algorithm↗</a>.
                 <br>
-                Out of interest, I reprogrammed it myself in python and made a <a href="https://www.youtube.com/watch?v=B5ITrAc1kEo&ab_channel=Orange" class="LightGreyLink">Youtube-Video↗</a> about it explaining the rough outlines of it.
+                Out of interest, I reprogrammed it myself in python and made a <a href="https://www.youtube.com/watch?v=B5ITrAc1kEo&ab_channel=Orange" class="LightGreyLink">Youtube-Video↗</a> about it explaining the rough outlines.
                 </p>
             </div>
 
@@ -60,7 +59,7 @@
                 <p>You can also notice that the upper left number is already precomputed for every square and decreases with the squares distance to the endpoint. And thats exaclty what this first number indicates. It is equal to the optimal distance from that square to the endpoint meaning the distance if there were no walls (the grey squares) in the way.</p>
                 <br>
                 <h3>Calculating the Distance-Estimate to the Endpoint</h3>
-                <p>I've set the distance from one square horizontally or vertically to the next equal to 10 and a diagonal has a distance of sqrt(2)*10 ≈ 14. If you now have the coordinates of the first square (x1, y1) and the coordinates of the end-square (x2, y2), you can get the shortest possible distance (the estimate) as follows: <!--Note: the estimation-function is problem-specific. Because this is a special case of a Pathfinding-Problem, it is possible to estimate it exactly. The A*-Algorithm is only guranteed to return the shortest path possible if the estimation function never over-estimates the distance--></p>
+                <p>I've set the distance from one square horizontally or vertically to the next equal to 10 and a diagonal has a distance of sqrt(2)*10 ≈ 14. If you now have the coordinates of the first square (x1, y1) and the coordinates of the end-square (x2, y2), you can get the shortest possible distance (the estimate) as follows:</p>
 <pre><code class="python">def getDistanceEstimate(square, end):
     delta_x = abs(end.x - square.x)
     delta_y = abs(end.y - square.y)
@@ -68,7 +67,7 @@
     diagonals = min(delta_x, delta_y)
     straights = abs(delta_x - delta_y)
 
-    return diagonals * 14 + straights * 10</code></pre>
+    return diagonals * 14 + straights * 10</code><div class="CodeNote">Note: The estimation-function is problem-specific. Because this is a special case of a Pathfinding-Problem, it is possible to estimate it exactly. The A*-Algorithm is only guranteed to return the shortest path possible if the estimation function never over-estimates the distance.</div></pre>
                 <p>Here, we first calculate the absolute difference between the square and the endpoint (meaning the distance in x and in y, which is a non-negative number). 
                     After that, we can recall that moving along a diagonal and getting one square closer in the x- and y-direction is more efficient that going two seperate steps in the x- and then the y-direction (14 < 10 + 10), so we always want to move along a diagonal (as long as it makes sence and we can't get to the goal by only moving vertically or horizontally).</p>
                 <br>
@@ -118,7 +117,7 @@
         path.append(nextSquare)
     
     return path.reverse()
-</code>Note to readers who are less familiar with python: list[-1] refers to the last element of a list.</pre>
+</code><div class="CodeNote">Note to readers who are less familiar with python: list[-1] refers to the last element of a list.</div></pre>
                 <h3>What now?</h3>
                 <p>Now that you've (hopefully) understood how everything works, how about you:
                     <ul>

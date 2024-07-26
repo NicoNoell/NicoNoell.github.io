@@ -35,9 +35,9 @@
 
 #Arrow {
     position: static;
-    font-size: 15pt;
+    font-size: 25pt;
     margin-top: 0px;
-    animation-name: ArrowAnimation;
+    /* animation-name: ArrowAnimation; */
     animation-duration: 0.8s;
     animation-delay: 0.4s;
     animation-fill-mode: both;
