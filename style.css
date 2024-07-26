@@ -22,6 +22,7 @@ p, li {
 
 a {
     color: orange;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 a:hover {
@@ -216,7 +217,7 @@ button {
 
 .OrangeLink {
     color: orange; 
-    font-weight: 400; 
+    font-weight: 600; 
     text-decoration-style: dotted; 
     text-decoration-line: underline;
 }
