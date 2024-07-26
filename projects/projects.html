@@ -61,8 +61,7 @@
                 <br>
                 <h3>Calculating the Distance-Estimate to the Endpoint</h3>
                 <p>I've set the distance from one square horizontally or vertically to the next equal to 10 and a diagonal has a distance of sqrt(2)*10 ≈ 14. If you now have the coordinates of the first square (x1, y1) and the coordinates of the end-square (x2, y2), you can get the shortest possible distance (the estimate) as follows: <!--Note: the estimation-function is problem-specific. Because this is a special case of a Pathfinding-Problem, it is possible to estimate it exactly. The A*-Algorithm is only guranteed to return the shortest path possible if the estimation function never over-estimates the distance--></p>
-                <pre>
-<code class="python">def getDistanceEstimate(square, end):
+<pre><code class="python">def getDistanceEstimate(square, end):
     delta_x = abs(end.x - square.x)
     delta_y = abs(end.y - square.y)
     
@@ -90,11 +89,45 @@
                 <p>In the gif at the top you have probably already noticed that there are squares that are <b style="color: rgb(230, 140, 230);">pink</b> and ones that are a <b style="color: rgb(255, 220, 255);">light lavender</b> which is close to white.
                 Additionally, you may notice that the lavender squares are alway next to pink (or the start-violet) ones. This can be easily explained by the fact that the lavender squares represent the squares that are checkable or "discoverable" and the pink ones are the ones the algorithm has already checked/discovered.</p>
                 <br>
-                <p>In short, discovering a square consists of four steps:</p>
+                <p>In short, discovering a new square consists of four steps:</p>
                 <h4>1. Choosing the most promising Square</h4>
+                <p style="margin-left: 30px;">The most promising Square is simply chosen by the square with the lowest total number. If there are multiply such squares, the ones whose estimated distance to the end is shorter get preferred. This leads to behaviour seen in the gif at the top, where once there is a clear path to the end, it is also taken by the algorithm without any detours.</p>
                 <h4>2. Calculating/Updating the values of neighboring discoverable Squares</h4>
+                <p style="margin-left: 30px;">Once a Square has been chosen, the "distance to the start"-number (the number at the top right) needs to be updated or set for all neighbors that aren't pink yet. This is done by either adding 10 or 14 to the current "distance to the start", depending on if a neighbor is a diagonal neighbor or not. 
+                    If this distance is greater than or equal to an already existing nuber for the distance to the start in that square, it simply gets ignored. Otherwise, the new shorter "distance to the start"-number is used in its place. If that sounded too complicated, just look at the gif below and see if it makes sence for yourself:</p>
+                <p style="text-align: center;"><img src="./documents/A-Star-Demo-2.gif" alt="A-Star-Pathfinding Demo 2 Gif" style="max-width: 200px;"></p>
+                <p style="margin-left: 30px;">Additionally, the programm has to keep track of all the checkable/discoverable Squares, so the new lavender squares get added to a list dedicated to do exactly that.</p>
                 <h4>3. Setting the Squares State to "discovered"</h4>
+                <p style="margin-left: 30px;">As long as the previous step was, as short is this one. In order for the programm to not check the same Square multiple times, the squares state is set to "Checked/Discovered" and removed from the squares-to-check-list. This also means that the squares distance to the start cannot be updated and improved anymore (which is sensible as it is guranteed to be the optimal distance at that point).</p>
                 <h4>4. Repeat until the green Square is discovered</h4>
+                <p style="margin-left: 30px;">Like the heading says, those three steps now get repeated again and again until the green square is discovered. No magic here either, but still its awesome to see everything come together like this. We're still not finished though!</p>
+                <br>
+                <h3>Retracing the path to the start</h3>
+                <p>This is the final step in getting our path from the start- to the end-point. You might wonder why this is necessary: It is necessary because we didn't store the parent of each square, meaning that if a square has multiple neighbors, we don't know which one the square got its optimal "distance to the start"-value from.
+                    <br>There are two solutions to this problem:</p>
+                <h4>1. Storing the parent for each square</h4>
+                <p style="margin-left: 30px;">This solution sounds stupid but it works. If you always store which neighbor has last set the "distance to the start"-value for the current square, you can easily get the final path by just following the links from end to start. The only drawback to this is that you have to store extra information (we're talking about less than a byte, but still) for each square.</p>
+                <h4>2. Actually retracing the path</h4>
+                <p style="margin-left: 30px;">I went for this solution because I found it easier to implement at the time. You can easily retrace the path to the start by always choosing the neighbor with the lowest "distance to the start"-value. This is guranteed to give you the optimal path between start and end. Here's some code for that:</p>
+<pre><code class="python">def retracePathToEnd(squares, start, end):
+    path = [end]
+    
+    while (path[-1] != start):
+        neighbors = squares.getNeighbors(path[-1])
+        nextSquare = getClosestSquareToStart(neighbors)
+        path.append(nextSquare)
+    
+    return path.reverse()
+</code>Note to readers who are less familiar with python: list[-1] refers to the last element of a list.</pre>
+                <h3>What now?</h3>
+                <p>Now that you've (hopefully) understood how everything works, how about you:
+                    <ul>
+                        <li>try to implement it yourself in a programming language of your choice</li>
+                        <li>go and read more about the formal way of describing everything and read the <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" class="GreyLink">Wikipedia page↗</a> (your choice)</li>
+                        <li>or try <a href="https://github.com/NicoNoell/Python-Projects/tree/main/A%20Star%20Pathfinding" class="LightGreyLink">my Code↗</a> and play around with it (be warned, it's a bit older)</li>                    
+                    </ul>
+                    <p>Anyways, thanks for reading. If you've got feedback for me, why don't you <a onclick="openPage('#202020', '../#Section3')" class="OrangeLink">contact me</a> :)</p>
+                </p>
             </div>
             <button class="ContinueReadingButton"></button>
         </div>
