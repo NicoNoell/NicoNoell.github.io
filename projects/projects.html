@@ -63,11 +63,11 @@
                 <p>I've set the distance from one square horizontally or vertically to the next equal to 10 and a diagonal has a distance of sqrt(2)*10 ≈ 14. If you now have the coordinates of the first square (x1, y1) and the coordinates of the end-square (x2, y2), you can get the shortest possible distance (the estimate) as follows: <!--Note: the estimation-function is problem-specific. Because this is a special case of a Pathfinding-Problem, it is possible to estimate it exactly. The A*-Algorithm is only guranteed to return the shortest path possible if the estimation function never over-estimates the distance--></p>
                 <pre>
 <code class="python">def getDistanceEstimate(square, end):
-    difference_x = abs(end.x - square.x)
-    difference_y = abs(end.y - square.y)
+    delta_x = abs(end.x - square.x)
+    delta_y = abs(end.y - square.y)
     
-    diagonals = min(difference_x, difference_y)
-    straights = abs(difference_x - difference_y)
+    diagonals = min(delta_x, delta_y)
+    straights = abs(delta_x - delta_y)
 
     return diagonals * 14 + straights * 10</code></pre>
                 <p>Here, we first calculate the absolute difference between the square and the endpoint (meaning the distance in x and in y, which is a non-negative number). 
@@ -85,7 +85,16 @@
                 </p>
                 <br>
                 <h3>Discovering new Squares</h3>
-                <p>Bla bla bla lowest number first, update numbers...</p>
+                <p>Let's now look at the core part of the algorithm: Choosing which Squares to discover. But first I have to explain what it means to "discover" a square.</p>
+                <br>
+                <p>In the gif at the top you have probably already noticed that there are squares that are <b style="color: rgb(230, 140, 230);">pink</b> and ones that are a <b style="color: rgb(255, 220, 255);">light lavender</b> which is close to white.
+                Additionally, you may notice that the lavender squares are alway next to pink (or the start-violet) ones. This can be easily explained by the fact that the lavender squares represent the squares that are checkable or "discoverable" and the pink ones are the ones the algorithm has already checked/discovered.</p>
+                <br>
+                <p>In short, discovering a square consists of four steps:</p>
+                <h4>1. Choosing the most promising Square</h4>
+                <h4>2. Calculating/Updating the values of neighboring discoverable Squares</h4>
+                <h4>3. Setting the Squares State to "discovered"</h4>
+                <h4>4. Repeat until the green Square is discovered</h4>
             </div>
             <button class="ContinueReadingButton"></button>
         </div>
