@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Signika:wght@300..700&display=swap');
+
 body {
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
@@ -15,8 +17,7 @@ h1 {
 
 p, li {
     color: white;
-    font-family: cursive;
-    font-weight: 100;
+    font-family: "Quicksand", sans-serif;
 }
 
 a {
