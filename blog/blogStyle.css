@@ -6,20 +6,24 @@ body {
     margin-top: 20px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
     color:white;
-    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #202020;
 }
 
 p {
     color: #202020;
     font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 h1 {
     color: #202020;
     font-weight: 600;
-    text-shadow: 1px 1px 3px #9a5d0e;
+    text-shadow: 1px 1px 3px #ebca9d, 2px 2px 4px#ad7326;
 }
 
 #HeaderSection {
@@ -48,6 +52,7 @@ h1 {
 .Section {
     background-color: #808080;
     text-align: left;
+    padding: 5px 20px 0px 20px;
     margin-bottom: 40px;
 }
 
@@ -139,7 +144,7 @@ h1 {
     animation-fill-mode: both;
     text-align: center;
     color: #202020;
-    text-shadow: 1px 1px 3px #9a5d0e;
+    text-shadow: 1px 1px 3px #ebca9d, 2px 2px 4px#ad7326;
 }
 
 @keyframes BlogAnimation {

@@ -237,6 +237,13 @@ button {
     text-decoration-line: underline;
 }
 
+.BlogLink {
+    color: #303030; 
+    text-shadow: 1px 1px 2px #ebca9d, 1px 1px 3px#ad7326;
+    text-decoration-style: dotted; 
+    text-decoration-line: underline;
+}
+
 .PreviewContent {
     margin: 20px -10px 0px -10px;
     background-color: #202020;
