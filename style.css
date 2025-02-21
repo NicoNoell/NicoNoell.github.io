@@ -59,6 +59,9 @@ a:hover {
     padding: 5px 20px 0px 20px;
     margin-bottom: 40px;
     box-shadow: 2px 2px 5px #202020;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes TransitionAnimation1 {

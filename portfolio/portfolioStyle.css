@@ -85,13 +85,18 @@ h1 {
     0% {margin-top: 70px; margin-left: calc(100% + 500px);}
     30% {margin-top: 70px; margin-left: max(50%, 220px); color: white}
     70% {margin-top: 70px; color: white}
-    100% {margin-top: 20px; color: orange}
+    100% {margin-top: 25px; color: orange}
 }
 
 .ProgrammingDetails {
-    background-image: linear-gradient(#303030, #454545); 
+    background-image: linear-gradient(#2b2b2b, #282828); 
+    border-width: 2px;
+    border-style: solid;
+    border-color: #202020;
     border-radius: 20px; 
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    padding:10px
+    padding: 10px;
+}
+
+summary {
+    cursor: pointer;
 }

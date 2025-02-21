@@ -58,7 +58,7 @@ h1 {
 
 #How {
     position: absolute;
-    margin-top: 26px;
+    margin-top: 31px;
     margin-left: calc(max(50%, 250px) - 103px);
     font-size: 15pt;
     animation-name: HowAnimation;
@@ -69,14 +69,14 @@ h1 {
 
 @keyframes HowAnimation {
     0% {margin-top: -50px; color: white}
-    12% {margin-top: 26px; color: white}
-    80% {margin-top: 26px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
-    100% {margin-top: 26px; color: transparent; text-shadow: 0px 0px transparent;}
+    12% {margin-top: 31px; color: white}
+    80% {margin-top: 31px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
+    100% {margin-top: 31px; color: transparent; text-shadow: 0px 0px transparent;}
 }
 
 #About {
     position: absolute;
-    margin-top: 26px;
+    margin-top: 31px;
     margin-left: calc(max(50%, 250px) - 60px);
     font-size: 15pt;
     animation-name: AboutAnimation;
@@ -88,14 +88,14 @@ h1 {
 @keyframes AboutAnimation {
     0% {margin-top: -50px; color: white}
     4% {margin-top: -50px; color: white}
-    16% {margin-top: 26px; color: white}
-    80% {margin-top: 26px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
-    100% {margin-top: 26px; color: transparent; text-shadow: 0px 0px transparent;}
+    16% {margin-top: 31px; color: white}
+    80% {margin-top: 31px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
+    100% {margin-top: 31px; color: transparent; text-shadow: 0px 0px transparent;}
 }
 
 #Reading {
     position: absolute;
-    margin-top: 46px;
+    margin-top: 51px;
     margin-left: calc(max(50%, 250px) - 110px);
     font-size: 15pt;
     animation-name: ReadingAnimation;
@@ -105,16 +105,16 @@ h1 {
 }
 
 @keyframes ReadingAnimation {
-    0% {margin-top: 70px; color: #a7a7a7; text-shadow: 0px 0px transparent;}
-    14% {margin-top: 70px; color: #a7a7a7; text-shadow: 0px 0px transparent;}
-    26% {margin-top: 46px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
-    80% {margin-top: 46px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
-    100% {margin-top: 46px; color: transparent; text-shadow: 0px 0px transparent;}
+    0% {margin-top: 75px; color: #a7a7a7; text-shadow: 0px 0px transparent;}
+    14% {margin-top: 75px; color: #a7a7a7; text-shadow: 0px 0px transparent;}
+    26% {margin-top: 51px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
+    80% {margin-top: 51px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
+    100% {margin-top: 51px; color: transparent; text-shadow: 0px 0px transparent;}
 }
 
 #My {
     position: absolute;
-    margin-top: 46px;
+    margin-top: 51px;
     margin-left: calc(max(50%, 250px) - 18px);
     font-size: 15pt;
     animation-name: MyAnimation;
@@ -124,16 +124,16 @@ h1 {
 }
 
 @keyframes MyAnimation {
-    0% {margin-top: 70px; color: #a7a7a7; text-shadow: 0px 0px transparent;}
-    18% {margin-top: 70px; color: #a7a7a7; text-shadow: 0px 0px transparent;}
-    30% {margin-top: 46px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
-    80% {margin-top: 46px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
-    100% {margin-top: 46px; color: transparent; text-shadow: 0px 0px transparent;}
+    0% {margin-top: 75px; color: #a7a7a7; text-shadow: 0px 0px transparent;}
+    18% {margin-top: 75px; color: #a7a7a7; text-shadow: 0px 0px transparent;}
+    30% {margin-top: 51px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
+    80% {margin-top: 51px; color: white; text-shadow: 1px 1px 3px #9a5d0e;}
+    100% {margin-top: 51px; color: transparent; text-shadow: 0px 0px transparent;}
 }
 
 #Blog {
     position: absolute;
-    margin-top: 20px;
+    margin-top: 25px;
     background-color: #808080;
     padding: 10px 20px;
     border-radius: 40px;
